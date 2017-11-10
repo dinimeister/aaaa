@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Servlet;
 
 import java.io.IOException;
@@ -24,7 +20,7 @@ public class Servlet_Usu extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
+           
             String accion = request.getParameter("accion");
             
             if(accion.equals("login")){

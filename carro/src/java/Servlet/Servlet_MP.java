@@ -13,10 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import Clase.*;
-/**
- *
- * @author Daniel
- */
+
 public class Servlet_MP extends HttpServlet {
 
     /**

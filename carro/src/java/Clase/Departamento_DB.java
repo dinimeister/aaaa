@@ -1,16 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Clase;
 import java.sql.*;
 import java.util.*;
 import Conexion.Conexion;
-/**
- *
- * @author Daniel
- */
+
 public class Departamento_DB {
     public static List<Departamento> ObtenerDepartamentos(){
         List<Departamento> lista = new ArrayList<Departamento>();
