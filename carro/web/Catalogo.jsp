@@ -33,7 +33,7 @@
             <nav  class="navbar navbar-inverse navbar-fixed-top">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a class="navbar-brand"><img src="Imagen/logo cluxer3.png" alt="" height="30" width="120"></a>
+                        <img src="Imagen/logo cluxer3.png" alt="" height="50" width="120">
                     </div>
                     <ul class="nav navbar-nav">
                         <li><a href="RegistrarVenta.jsp" id="lnkCompra">Mi compra</a></li>
@@ -41,7 +41,7 @@
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="MiPerfil.jsp?codigoU=<%=usu.getCodigoUsuario()%>"><span class="glyphicon glyphicon-user"></span> mi Perfil</a></li>
+                        <li><a href="MiPerfil.jsp?codigoU=<%=usu.getCodigoUsuario()%>" id="lnkPerfil"><span class="glyphicon glyphicon-user"></span> mi Perfil</a></li>
                         <li><a href="Login.jsp" id="lnkLogin" ><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                         <li><a href="Servlet_Usu?accion=logout" id="lnkLogout" ><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
                     </ul>
@@ -68,7 +68,7 @@
                             Producto p = lista.get(i);
                     %>
 
-                <th><img src="Imagen/<%=p.getImagenP()%>" width="100" height="100"><br>
+                <th ><img align="center" src="Imagen/<%=p.getImagenP()%>" width="100" height="100"><br>
                     <%=p.getClaseProducto()%> <%=p.getMarcaProducto()%> <br>
                     <%=p.getDescripcion()%><br>
                     $<%=p.getPrecioP()%>.-<br>
